@@ -90,8 +90,8 @@ const Signup = ({route, navigation}) => {
     const logingl = async () => {
       setSigninInProgress(true);
       GoogleSignin.configure({
-        iosClientId: '741976775727-104g5bse6k5a2g40vnbr8r14f5doqe8s.apps.googleusercontent.com',
-        webClientId: '741976775727-o0fsjlkqlf2dnfabm6a5cc7jj9mqgt73.apps.googleusercontent.com', // client ID of type WEB for your server. Required to get the idToken on the user object, and for offline access.
+        iosClientId: '<YOUR-CLIENT-ID>',
+        webClientId: '<YOUR-CLIENT-ID>', // client ID of type WEB for your server. Required to get the idToken on the user object, and for offline access.
 
     });
 
