@@ -54,17 +54,17 @@ export const urlAppStore = 'itms-apps://apps.apple.com/us/app/how-much-days/id64
 
 export const urlAppWeb = 'httpss://apps.apple.com/us/app/how-much-days/id6447752303';
 
-export const publishableKey = 'pk_test_51MzWeiEYzAPwGPE1qRbdfpoT5kpuxtkTCSuJoREQq0hpnBnVOF0aBfJIqjPz06WyYL2bauVqXecnP3Ak3KJNV7zL00DzsWBTfX'
+export const publishableKey = '<YOUR-STRIPE-KEY>
 
-export const urlScheme = 'https://buy.stripe.com/dR69Dr95w6pEb968ww'
+export const urlScheme = '<URI-SCHEME>'
 
-export const merchantIdentifier = 'merchant.com.willdoro'
+export const merchantIdentifier = '<MERCHANT-ID>'
 
 export const privacypolicy = 'https://www.termsfeed.com/live/ad2065fe-dc76-48a0-a121-592991d8ed08'
 
 export const termsofservice = 'https://www.app-privacy-policy.com/live.php?token=84MRr4GNrWG85JqKR7OvT3d4RMK3Y5qd'
 
-export const azureConstant = 'https://csb10032003198f8088.blob.core.windows.net/avatarcontainer/'
+export const azureConstant = '<AZURE-CONTAINER>'
 
 const userId = 0 
 
