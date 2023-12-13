@@ -37,20 +37,18 @@ export const urlAppStore = 'itms-apps://apps.apple.com/us/app/how-much-days/id64
 
 export const urlAppWeb = 'httpss://apps.apple.com/us/app/how-much-days/id6447752303';
 
-export const publishableKeyLive = 'pk_live_51MzWeiEYzAPwGPE13wscXu5RF5KI12zxxPgLcDS4fMW6T1DOlAjNqREMP2g5SIfDeZVSGtvQuAj8bpQMIGmYrt5U00ZHCar5IV'
-export const publishableKeyTest = 'pk_test_51MzWeiEYzAPwGPE1qRbdfpoT5kpuxtkTCSuJoREQq0hpnBnVOF0aBfJIqjPz06WyYL2bauVqXecnP3Ak3KJNV7zL00DzsWBTfX'
+export const publishableKeyLive = '<YOUR-STRIPE-KEY>'
+export const publishableKeyTest = '<YOUR-STRIPE-KEY>'
 
-// export const API_URL = 'https://will-doro-d4ab29967685.herokuapp.com'
+export const API_URL = '<YOUR-API-URL>'
 
-export const API_URL = 'https://will-doro-ff47e2266450.herokuapp.com/in-app'
+export const API_URL_CANCEL = '<YOUR-API-URL>'
 
-export const API_URL_CANCEL = 'https://will-doro-ff47e2266450.herokuapp.com/cancel-sub'
-
-export const azureConstant = 'https://csb10032003198f8088.blob.core.windows.net/avatarcontainer/'
+export const azureConstant = '<YOUR-AZURE-URL>'
 
 export const API_URLtest = 'http://localhost:3000'
 
-export const urlScheme = 'https://buy.stripe.com/3cs5nb95wcO21yw4gk'
+export const urlScheme = ''
 
 export const merchantIdentifier = 'merchant.com.willdoro'
 
