@@ -25,22 +25,22 @@
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.googleusercontent.apps.741976775727-104g5bse6k5a2g40vnbr8r14f5doqe8s</string>
+				<string><YOUR-CLIENT-ID></string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>FacebookAppID</key>
-	<string>2008255546233569</string>
+	<string><YOUR-APP-ID></string>
 	<key>FacebookClientToken</key>
-	<string>a20dcb4d9d99df79f50fb3e72de3cad1</string>
+	<string><YOUR-CLIENT-TOKEN></string>
 	<key>FacebookDisplayName</key>
 	<string>WillDoro</string>
 	<key>GIDClientID</key>
-	<string>741976775727-104g5bse6k5a2g40vnbr8r14f5doqe8s.apps.googleusercontent.com</string>
+	<string><YOUR-REVERSED-CLIENT-ID></string>
 	<key>GIDServerClientID</key>
-	<string>com.googleusercontent.apps.741976775727-o0fsjlkqlf2dnfabm6a5cc7jj9mqgt73</string>
+	<string><YOUR-CLIENT-ID></string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>fbapi</string>
