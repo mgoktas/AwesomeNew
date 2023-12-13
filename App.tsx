@@ -218,7 +218,7 @@ useEffect(() => {
     <NavigationContainer onReady={() => {
       isReadyRef.current = true;
 }} ref={navigationRef} linking={linking}>
-      <AppProvider id={'willdoro-xhauo'}>
+      <AppProvider id={'<YOUR-APP-ID>'}>
       <RealmProvider>
       <Stack.Navigator initialRouteName='SplashScreen' screenOptions={{headerShown: false}}>
         <Stack.Screen initialParams={{initialUrl2: initialUrl}} name='Focus' component={Focus}  />
