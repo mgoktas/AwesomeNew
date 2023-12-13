@@ -1,7 +1,15 @@
 PODS:
+  - AppAuth (1.6.2):
+    - AppAuth/Core (= 1.6.2)
+    - AppAuth/ExternalUserAgent (= 1.6.2)
+  - AppAuth/Core (1.6.2)
+  - AppAuth/ExternalUserAgent (1.6.2):
+    - AppAuth/Core
   - boost (1.83.0)
   - CocoaAsyncSocket (7.6.5)
   - DoubleConversion (1.1.6)
+  - FBAEMKit (16.1.3):
+    - FBSDKCoreKit_Basics (= 16.1.3)
   - FBLazyVector (0.73.0)
   - FBReactNativeSpec (0.73.0):
     - RCT-Folly (= 2022.05.16.00)
@@ -10,6 +18,18 @@ PODS:
     - React-Core (= 0.73.0)
     - React-jsi (= 0.73.0)
     - ReactCommon/turbomodule/core (= 0.73.0)
+  - FBSDKCoreKit (16.1.3):
+    - FBAEMKit (= 16.1.3)
+    - FBSDKCoreKit_Basics (= 16.1.3)
+  - FBSDKCoreKit_Basics (16.1.3)
+  - FBSDKGamingServicesKit (16.1.3):
+    - FBSDKCoreKit (= 16.1.3)
+    - FBSDKCoreKit_Basics (= 16.1.3)
+    - FBSDKShareKit (= 16.1.3)
+  - FBSDKLoginKit (16.1.3):
+    - FBSDKCoreKit (= 16.1.3)
+  - FBSDKShareKit (16.1.3):
+    - FBSDKCoreKit (= 16.1.3)
   - Flipper (0.201.0):
     - Flipper-Folly (~> 2.6)
   - Flipper-Boost-iOSX (1.76.0.1.11)
@@ -68,10 +88,21 @@ PODS:
     - FlipperKit/FlipperKitNetworkPlugin
   - fmt (6.2.1)
   - glog (0.3.5)
+  - GoogleSignIn (7.0.0):
+    - AppAuth (~> 1.5)
+    - GTMAppAuth (< 3.0, >= 1.3)
+    - GTMSessionFetcher/Core (< 4.0, >= 1.1)
+  - GTMAppAuth (2.0.0):
+    - AppAuth/Core (~> 1.6)
+    - GTMSessionFetcher/Core (< 4.0, >= 1.5)
+  - GTMSessionFetcher/Core (3.2.0)
   - hermes-engine (0.73.0):
     - hermes-engine/Pre-built (= 0.73.0)
   - hermes-engine/Pre-built (0.73.0)
   - libevent (2.1.12)
+  - MMKV (1.3.2):
+    - MMKVCore (~> 1.3.2)
+  - MMKVCore (1.3.2)
   - OpenSSL-Universal (1.1.1100)
   - RCT-Folly (2022.05.16.00):
     - boost
@@ -944,6 +975,37 @@ PODS:
   - React-Mapbuffer (0.73.0):
     - glog
     - React-debug
+  - react-native-date-picker (4.3.4):
+    - React-Core
+  - react-native-fbsdk-next (12.1.2):
+    - React-Core
+    - react-native-fbsdk-next/Core (= 12.1.2)
+    - react-native-fbsdk-next/Login (= 12.1.2)
+    - react-native-fbsdk-next/Share (= 12.1.2)
+  - react-native-fbsdk-next/Core (12.1.2):
+    - FBSDKCoreKit (~> 16.1.3)
+    - React-Core
+  - react-native-fbsdk-next/Login (12.1.2):
+    - FBSDKLoginKit (~> 16.1.3)
+    - React-Core
+  - react-native-fbsdk-next/Share (12.1.2):
+    - FBSDKGamingServicesKit (~> 16.1.3)
+    - FBSDKShareKit (~> 16.1.3)
+    - React-Core
+  - react-native-image-picker (7.1.0):
+    - glog
+    - RCT-Folly (= 2022.05.16.00)
+    - React-Core
+  - react-native-mmkv (2.11.0):
+    - MMKV (>= 1.2.13)
+    - React-Core
+  - react-native-notifications (5.1.0):
+    - React-Core
+  - react-native-safe-area-context (4.8.0):
+    - React-Core
+  - react-native-track-player (4.0.1):
+    - React-Core
+    - SwiftAudioEx (= 1.0.0)
   - React-nativeconfig (0.73.0)
   - React-NativeModulesApple (0.73.0):
     - glog
@@ -1111,7 +1173,80 @@ PODS:
     - React-jsi (= 0.73.0)
     - React-logger (= 0.73.0)
     - React-perflogger (= 0.73.0)
+  - RealmJS (12.3.1):
+    - React
+  - rn-fetch-blob (0.12.0):
+    - React-Core
+  - RNCAsyncStorage (1.21.0):
+    - React-Core
+  - RNCMaskedView (0.1.11):
+    - React
+  - RNCPicker (2.6.1):
+    - React-Core
+  - RNDeviceInfo (10.12.0):
+    - React-Core
+  - RNFlashList (1.6.3):
+    - React-Core
+  - RNGestureHandler (2.14.0):
+    - glog
+    - RCT-Folly (= 2022.05.16.00)
+    - React-Core
+  - RNGoogleSignin (10.1.1):
+    - GoogleSignIn (~> 7.0)
+    - React-Core
+  - RNIap (12.12.0):
+    - React-Core
+  - RNReanimated (3.6.1):
+    - glog
+    - RCT-Folly (= 2022.05.16.00)
+    - React-Core
+    - ReactCommon/turbomodule/core
+  - RNScreens (3.29.0):
+    - glog
+    - RCT-Folly (= 2022.05.16.00)
+    - React-Core
+  - RNVectorIcons (10.0.2):
+    - glog
+    - RCT-Folly (= 2022.05.16.00)
+    - React-Core
   - SocketRocket (0.6.1)
+  - Stripe (23.18.3):
+    - StripeApplePay (= 23.18.3)
+    - StripeCore (= 23.18.3)
+    - StripePayments (= 23.18.3)
+    - StripePaymentsUI (= 23.18.3)
+    - StripeUICore (= 23.18.3)
+  - stripe-react-native (0.35.0):
+    - React-Core
+    - Stripe (~> 23.18.0)
+    - StripeApplePay (~> 23.18.0)
+    - StripeFinancialConnections (~> 23.18.0)
+    - StripePayments (~> 23.18.0)
+    - StripePaymentSheet (~> 23.18.0)
+    - StripePaymentsUI (~> 23.18.0)
+  - StripeApplePay (23.18.3):
+    - StripeCore (= 23.18.3)
+  - StripeCore (23.18.3)
+  - StripeFinancialConnections (23.18.3):
+    - StripeCore (= 23.18.3)
+    - StripeUICore (= 23.18.3)
+  - StripePayments (23.18.3):
+    - StripeCore (= 23.18.3)
+    - StripePayments/Stripe3DS2 (= 23.18.3)
+  - StripePayments/Stripe3DS2 (23.18.3):
+    - StripeCore (= 23.18.3)
+  - StripePaymentSheet (23.18.3):
+    - StripeApplePay (= 23.18.3)
+    - StripeCore (= 23.18.3)
+    - StripePayments (= 23.18.3)
+    - StripePaymentsUI (= 23.18.3)
+  - StripePaymentsUI (23.18.3):
+    - StripeCore (= 23.18.3)
+    - StripePayments (= 23.18.3)
+    - StripeUICore (= 23.18.3)
+  - StripeUICore (23.18.3):
+    - StripeCore (= 23.18.3)
+  - SwiftAudioEx (1.0.0)
   - Yoga (1.14.0)
 
 DEPENDENCIES:
@@ -1167,6 +1302,13 @@ DEPENDENCIES:
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector-modern`)
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
   - React-Mapbuffer (from `../node_modules/react-native/ReactCommon`)
+  - react-native-date-picker (from `../node_modules/react-native-date-picker`)
+  - react-native-fbsdk-next (from `../node_modules/react-native-fbsdk-next`)
+  - react-native-image-picker (from `../node_modules/react-native-image-picker`)
+  - react-native-mmkv (from `../node_modules/react-native-mmkv`)
+  - react-native-notifications (from `../node_modules/react-native-notifications`)
+  - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
+  - react-native-track-player (from `../node_modules/react-native-track-player`)
   - React-nativeconfig (from `../node_modules/react-native/ReactCommon`)
   - React-NativeModulesApple (from `../node_modules/react-native/ReactCommon/react/nativemodule/core/platform/ios`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
@@ -1187,11 +1329,32 @@ DEPENDENCIES:
   - React-runtimescheduler (from `../node_modules/react-native/ReactCommon/react/renderer/runtimescheduler`)
   - React-utils (from `../node_modules/react-native/ReactCommon/react/utils`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - RealmJS (from `../node_modules/realm`)
+  - rn-fetch-blob (from `../node_modules/rn-fetch-blob`)
+  - "RNCAsyncStorage (from `../node_modules/@react-native-async-storage/async-storage`)"
+  - "RNCMaskedView (from `../node_modules/@react-native-community/masked-view`)"
+  - "RNCPicker (from `../node_modules/@react-native-picker/picker`)"
+  - RNDeviceInfo (from `../node_modules/react-native-device-info`)
+  - "RNFlashList (from `../node_modules/@shopify/flash-list`)"
+  - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
+  - "RNGoogleSignin (from `../node_modules/@react-native-google-signin/google-signin`)"
+  - RNIap (from `../node_modules/react-native-iap`)
+  - RNReanimated (from `../node_modules/react-native-reanimated`)
+  - RNScreens (from `../node_modules/react-native-screens`)
+  - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
+  - "stripe-react-native (from `../node_modules/@stripe/stripe-react-native`)"
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
   trunk:
+    - AppAuth
     - CocoaAsyncSocket
+    - FBAEMKit
+    - FBSDKCoreKit
+    - FBSDKCoreKit_Basics
+    - FBSDKGamingServicesKit
+    - FBSDKLoginKit
+    - FBSDKShareKit
     - Flipper
     - Flipper-Boost-iOSX
     - Flipper-DoubleConversion
@@ -1201,9 +1364,23 @@ SPEC REPOS:
     - Flipper-PeerTalk
     - FlipperKit
     - fmt
+    - GoogleSignIn
+    - GTMAppAuth
+    - GTMSessionFetcher
     - libevent
+    - MMKV
+    - MMKVCore
     - OpenSSL-Universal
     - SocketRocket
+    - Stripe
+    - StripeApplePay
+    - StripeCore
+    - StripeFinancialConnections
+    - StripePayments
+    - StripePaymentSheet
+    - StripePaymentsUI
+    - StripeUICore
+    - SwiftAudioEx
 
 EXTERNAL SOURCES:
   boost:
@@ -1261,6 +1438,20 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/logger"
   React-Mapbuffer:
     :path: "../node_modules/react-native/ReactCommon"
+  react-native-date-picker:
+    :path: "../node_modules/react-native-date-picker"
+  react-native-fbsdk-next:
+    :path: "../node_modules/react-native-fbsdk-next"
+  react-native-image-picker:
+    :path: "../node_modules/react-native-image-picker"
+  react-native-mmkv:
+    :path: "../node_modules/react-native-mmkv"
+  react-native-notifications:
+    :path: "../node_modules/react-native-notifications"
+  react-native-safe-area-context:
+    :path: "../node_modules/react-native-safe-area-context"
+  react-native-track-player:
+    :path: "../node_modules/react-native-track-player"
   React-nativeconfig:
     :path: "../node_modules/react-native/ReactCommon"
   React-NativeModulesApple:
@@ -1301,15 +1492,50 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/react/utils"
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
+  RealmJS:
+    :path: "../node_modules/realm"
+  rn-fetch-blob:
+    :path: "../node_modules/rn-fetch-blob"
+  RNCAsyncStorage:
+    :path: "../node_modules/@react-native-async-storage/async-storage"
+  RNCMaskedView:
+    :path: "../node_modules/@react-native-community/masked-view"
+  RNCPicker:
+    :path: "../node_modules/@react-native-picker/picker"
+  RNDeviceInfo:
+    :path: "../node_modules/react-native-device-info"
+  RNFlashList:
+    :path: "../node_modules/@shopify/flash-list"
+  RNGestureHandler:
+    :path: "../node_modules/react-native-gesture-handler"
+  RNGoogleSignin:
+    :path: "../node_modules/@react-native-google-signin/google-signin"
+  RNIap:
+    :path: "../node_modules/react-native-iap"
+  RNReanimated:
+    :path: "../node_modules/react-native-reanimated"
+  RNScreens:
+    :path: "../node_modules/react-native-screens"
+  RNVectorIcons:
+    :path: "../node_modules/react-native-vector-icons"
+  stripe-react-native:
+    :path: "../node_modules/@stripe/stripe-react-native"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
+  AppAuth: 3bb1d1cd9340bd09f5ed189fb00b1cc28e1e8570
   boost: 26fad476bfa736552bbfa698a06cc530475c1505
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   DoubleConversion: fea03f2699887d960129cc54bba7e52542b6f953
+  FBAEMKit: af2972f39bb0f3f7c45998f435b007833c32ffb2
   FBLazyVector: 39ba45baf4e398618f8b3a4bb6ba8fcdb7fc2133
   FBReactNativeSpec: 20cfca68498e27879514790359289d1df2b52c56
+  FBSDKCoreKit: 19e2e18b3be578d7a51fed8fdd8c152bef0b9511
+  FBSDKCoreKit_Basics: dd9826ce3c9fd9f8cdf8dbbd0ef0a53e6c0c9e7e
+  FBSDKGamingServicesKit: 791d9b1de6da359e92da3b1ba3459f36b0aa604f
+  FBSDKLoginKit: c395c63a1a6cf4a8a1e6103fd94b8c46329ee81c
+  FBSDKShareKit: de5c291ad414ec07048ab09bae1b1b74b3ed92fe
   Flipper: c7a0093234c4bdd456e363f2f19b2e4b27652d44
   Flipper-Boost-iOSX: fd1e2b8cbef7e662a122412d7ac5f5bea715403c
   Flipper-DoubleConversion: 2dc99b02f658daf147069aad9dbd29d8feb06d30
@@ -1320,8 +1546,13 @@ SPEC CHECKSUMS:
   FlipperKit: 37525a5d056ef9b93d1578e04bc3ea1de940094f
   fmt: ff9d55029c625d3757ed641535fd4a75fedc7ce9
   glog: c5d68082e772fa1c511173d6b30a9de2c05a69a2
+  GoogleSignIn: b232380cf495a429b8095d3178a8d5855b42e842
+  GTMAppAuth: 99fb010047ba3973b7026e45393f51f27ab965ae
+  GTMSessionFetcher: 41b9ef0b4c08a6db4b7eb51a21ae5183ec99a2c8
   hermes-engine: 34304f8c6e8fa68f63a5fe29af82f227d817d7a7
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
+  MMKV: f21593c0af4b3f2a0ceb8f820f28bb639ea22bb7
+  MMKVCore: 31b4cb83f8266467eef20a35b6d78e409a11060d
   OpenSSL-Universal: ebc357f1e6bc71fa463ccb2fe676756aff50e88c
   RCT-Folly: 7169b2b1c44399c76a47b5deaaba715eeeb476c0
   RCTRequired: 5e3631b27c08716986980ef23eed8abdee1cdcaf
@@ -1344,6 +1575,13 @@ SPEC CHECKSUMS:
   React-jsinspector: 9f6fb9ed9f03a0fb961ab8dc2e0e0ee0dc729e77
   React-logger: 008caec0d6a587abc1e71be21bfac5ba1662fe6a
   React-Mapbuffer: 58fe558faf52ecde6705376700f848d0293d1cef
+  react-native-date-picker: db26a4dc48fe4e7c3c3afd5008519fad1091c524
+  react-native-fbsdk-next: 9c40664b1501be29572795c2e4c8e347f39f556f
+  react-native-image-picker: 6c51359eca7a7df9f07e297218c25696eb9da976
+  react-native-mmkv: e97c0c79403fb94577e5d902ab1ebd42b0715b43
+  react-native-notifications: 4601a5a8db4ced6ae7cfc43b44d35fe437ac50c4
+  react-native-safe-area-context: d1c8161a1e9560f7066e8926a7d825eb57c5dab5
+  react-native-track-player: 97d76dbbd35f27cc709e5f04540615e54264b3f9
   React-nativeconfig: a063483672b8add47a4875b0281e202908ff6747
   React-NativeModulesApple: 169506a5fd708ab22811f76ee06a976595c367a1
   React-perflogger: b61e5db8e5167f5e70366e820766c492847c082e
@@ -1364,9 +1602,32 @@ SPEC CHECKSUMS:
   React-runtimescheduler: 77543c74df984ce56c09d49d427149c53784aaf6
   React-utils: 42708ea436853045ef1eaff29996813d9fbbe209
   ReactCommon: 851280fb976399ca1aabc74cc2c3612069ea70a2
+  RealmJS: 578e16cf7c0b32c13a23b2df667b021bb3c36f1c
+  rn-fetch-blob: f065bb7ab7fb48dd002629f8bdcb0336602d3cba
+  RNCAsyncStorage: 618d03a5f52fbccb3d7010076bc54712844c18ef
+  RNCMaskedView: 0e1bc4bfa8365eba5fbbb71e07fbdc0555249489
+  RNCPicker: b18aaf30df596e9b1738e7c1f9ee55402a229dca
+  RNDeviceInfo: db5c64a060e66e5db3102d041ebe3ef307a85120
+  RNFlashList: 4b4b6b093afc0df60ae08f9cbf6ccd4c836c667a
+  RNGestureHandler: 61bfdfc05db9b79dd61f894dcd29d3dcc6db3c02
+  RNGoogleSignin: aac5c1ec73422109dec1da770247a1e410dcc620
+  RNIap: 313ab52dde2bc1a25abb76cba70388e9b5f6a8c1
+  RNReanimated: 57f436e7aa3d277fbfed05e003230b43428157c0
+  RNScreens: b582cb834dc4133307562e930e8fa914b8c04ef2
+  RNVectorIcons: 8cabd5809519015ed2c1cdb4ec83d563296bd5cc
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
+  Stripe: e046335ab6e3f25d39f1a55bd98620a85269cffa
+  stripe-react-native: 2e2dad1734c1c2b71564b66bae4395bfd8419af4
+  StripeApplePay: 1aa77f8ec7a6d9463fa8f49ae0672fe59dbf4c73
+  StripeCore: fe10c34fb3c9ae18b986913f7e4460e7c653ce93
+  StripeFinancialConnections: 6022426894046f26fe21d348da02d83d8a637fb0
+  StripePayments: 7084fed30c5f03f15ae23c5dce63715ba0b53e15
+  StripePaymentSheet: c8d25d4133476c6238d3cc932fb8219bb5ea49c0
+  StripePaymentsUI: c12de264eda974d91e43a769f53a6c6afc9a1715
+  StripeUICore: 090c4fe916d039616ce8f8de30392f4aeb33dd16
+  SwiftAudioEx: 6f511018b7a0fdfd14ed1bb4081f953588245cc0
   Yoga: 20d6a900dcc8d61d5e3b799bbf627cc34474a8c4
 
-PODFILE CHECKSUM: 5a29e53137fd93b2aa8db1fedc49d3dae11e5fb2
+PODFILE CHECKSUM: 6f223f32209215a5ef10851356685a61d4053093
 
 COCOAPODS: 1.14.3

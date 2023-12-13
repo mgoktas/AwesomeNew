@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>Awesome</string>
+	<string>Will Doro</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -20,8 +20,32 @@
 	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.741976775727-104g5bse6k5a2g40vnbr8r14f5doqe8s</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>FacebookAppID</key>
+	<string>2008255546233569</string>
+	<key>FacebookClientToken</key>
+	<string>a20dcb4d9d99df79f50fb3e72de3cad1</string>
+	<key>FacebookDisplayName</key>
+	<string>WillDoro</string>
+	<key>GIDClientID</key>
+	<string>741976775727-104g5bse6k5a2g40vnbr8r14f5doqe8s.apps.googleusercontent.com</string>
+	<key>GIDServerClientID</key>
+	<string>com.googleusercontent.apps.741976775727-o0fsjlkqlf2dnfabm6a5cc7jj9mqgt73</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbapi</string>
+		<string>fb-messenger-share-api</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -31,8 +55,18 @@
 		<key>NSAllowsLocalNetworking</key>
 		<true/>
 	</dict>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<key>NSCameraUsageDescription</key>
+	<string>Give access to WillDoro if you would like to choose your avatar from your phone camera.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Give access to WillDoro if you would like to choose your avatar from your photo library.</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Entypo.ttf</string>
+		<string>FontAwesome.ttf</string>
+		<string>Feather.ttf</string>
+		<string>MaterialIcons.ttf</string>
+		<string>Ionicons.ttf</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
